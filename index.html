@@ -171,44 +171,42 @@
       overflow: hidden;
       box-shadow: 0 6px 18px rgba(0,0,0,0.08);
       transition: transform 0.3s;
-      cursor: pointer;
+      padding: 24px;
+      text-align: center;
     }
 
     .project-card:hover {
       transform: translateY(-10px);
     }
 
-    .project-img {
-      height: 180px;
-      background: url('https://fusion20082020-cmyk.github.io/Delicious-Bites/restaurant-preview.jpg') center/cover;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-weight: 600;
-      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
-    }
-
-    .project-content {
-      padding: 24px;
-    }
-
-    .project-content h3 {
-      font-size: 1.3rem;
-      margin-bottom: 10px;
+    .project-card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 12px;
       color: #1a202c;
     }
 
-    .project-content p {
+    .project-card p {
       color: #4a5568;
       font-size: 0.95rem;
-      margin-bottom: 14px;
+      margin-bottom: 16px;
+      line-height: 1.5;
     }
 
-    .project-tech {
-      font-size: 0.85rem;
+    .project-link {
+      display: inline-block;
+      font-size: 0.95rem;
       color: #4F46E5;
-      font-weight: 500;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 6px 12px;
+      border: 1px solid #4F46E5;
+      border-radius: 6px;
+      transition: all 0.3s;
+    }
+
+    .project-link:hover {
+      background: #4F46E5;
+      color: white;
     }
 
     #contact {
@@ -391,16 +389,11 @@
       <!-- Projects Grid -->
       <div class="projects-grid">
         <!-- Restaurant Website (Visible in: All, Web) -->
-        <a href="https://fusion20082020-cmyk.github.io/Delicious-Bites/" target="_blank" class="project-card" data-category="web">
-          <div class="project-img">
-            <img src="Screenshot_2025_0813_154213.jpg" alt="Delicious Bites Home Screen" style="width: 100%; height: 180px; object-fit: cover;">
-          </div>
-          <div class="project-content">
-            <h3>Delicious Bites</h3>
-            <p>A modern, responsive website for a restaurant with menu, reservations, and gallery.</p>
-            <div class="project-tech">🍽️ HTML, CSS, JavaScript | Fully Responsive</div>
-          </div>
-        </a>
+        <div class="project-card" data-category="web">
+          <h3>Delicious Bites</h3>
+          <p>A modern, responsive website for a restaurant with menu, reservations, and gallery.</p>
+          <a href="https://fusion20082020-cmyk.github.io/Delicious-Bites/" class="project-link" target="_blank">View Website →</a>
+        </div>
       </div>
     </div>
   </section>
@@ -523,4 +516,4 @@
   </script>
 
 </body>
-  </html>
+</html>
